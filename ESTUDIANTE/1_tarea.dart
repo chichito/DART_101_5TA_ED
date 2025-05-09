@@ -7,4 +7,5 @@ void main() {
   print(valor);
   double? valor1 = double.tryParse("pepito");
   print(valor1);
+  print(valor.runtimeType);
 }

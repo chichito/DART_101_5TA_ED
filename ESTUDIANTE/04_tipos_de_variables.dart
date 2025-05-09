@@ -16,6 +16,10 @@ void main(){
   print(listaNum);
   print(listaNum[listaNum.length-1]);
   print(listaNum.last);
+
+  print("el tipo es :${listaNum.runtimeType}");
+  print("el tipo es :${listaNum[0].runtimeType}");
+
 }
 
 //tarea 1
