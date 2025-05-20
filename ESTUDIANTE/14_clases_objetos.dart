@@ -1,15 +1,15 @@
-void main(){
+void main() {
   final Usuario2 = Usuario.parametronombre(
     nombre: "Pedro",
     apellido: "Lopez",
     clave: "1234",
     edad: 25,
   );
-print(Usuario2.nombre);
-Usuario2.registrarUsuario();
-print(Usuario2.nombreApellido);
-Usuario2.autuaizarContrasena = "5678";
-print(Usuario2.clave);
+  print(Usuario2.nombre);
+  Usuario2.registrarUsuario();
+  print(Usuario2.nombreApellido);
+  Usuario2.autuaizarContrasena = "5678";
+  print(Usuario2.clave);
 }
 
 class Usuario {
@@ -28,12 +28,14 @@ class Usuario {
 
   void registrarUsuario() {
     print("Usuario registrado: ${this.nombre} $apellido se ha registrado");
-  } 
+  }
+
   void mostrarInfo() {
     print("Nombre: $nombre, Edad: $edad");
   }
-String get nombreApellido => "$nombre $apellido";
-set autuaizarContrasena(String nuevaClave) {
-  clave = nuevaClave;
-}
+
+  String get nombreApellido => "$nombre $apellido";
+  set autuaizarContrasena(String nuevaClave) {
+    clave = nuevaClave;
+  }
 }
